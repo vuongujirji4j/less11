@@ -6,17 +6,17 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using PvvK22CNT3Lesson11_2210900037.Models;
+using PvvK22CNT3Lesson11_2210900085.Models;
 
-namespace LHLK22PvvK22CNT3_Lesson11Entities db = new PvvK22CNT3_Lesson11Entities();
+namespace PvvK22PvvK22CNT3_Lesson11Entities db = new PvvK22CNT3_Lesson11Entities();
 
-        // GET: LHLCategories
+        // GET: PvvCategories
         public ActionResult PvvIndex()
         {
             return View(db.PvvCategories.ToList());
         }
 
-        // GET: LHLCategories/Details/5
+        // GET: PvvCategories/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -38,7 +38,7 @@ namespace LHLK22PvvK22CNT3_Lesson11Entities db = new PvvK22CNT3_Lesson11Entities
             return View(PvvCategory);
         }
 
-        // GET: LHLCategories/Edit/5
+        // GET: PvvPvvCategories/Edit/5
         public ActionResult Edit(int? id)
         {
             ifPvvCategory).State = EntityState.Modified;
@@ -48,7 +48,7 @@ namespace LHLK22PvvK22CNT3_Lesson11Entities db = new PvvK22CNT3_Lesson11Entities
             return View(PvvCategory);
         }
 
-        // GET: LHLCategories/Delete/5
+        // GET: PvvCategories/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -63,7 +63,7 @@ namespace LHLK22PvvK22CNT3_Lesson11Entities db = new PvvK22CNT3_Lesson11Entities
             return View(PvvCategory);
         }
 
-        // POST: LHLCategories/Delete/5
+        // POST: PvvCategories/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
